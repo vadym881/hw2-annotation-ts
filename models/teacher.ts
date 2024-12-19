@@ -1,5 +1,5 @@
-import { Course } from "./course.ts";
-import { FullPersonInfoType, Person } from "./person.ts";
+import { Course } from "./course";
+import { FullPersonInfoType, Person } from "./person";
 
 export class Teacher extends Person {
   specializations = [];

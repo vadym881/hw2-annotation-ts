@@ -1,8 +1,8 @@
-import { Course } from "./models/course.ts";
-import { Group } from "./models/group.ts";
-import { GenderEnum, FullPersonInfoType, Person } from "./models/person.ts";
-import { Student } from "./models/student.ts";
-import { Teacher } from "./models/teacher.ts";
+import { Course } from "./models/course";
+import { Group } from "./models/group";
+import { GenderEnum, FullPersonInfoType, Person } from "./models/person";
+import { Student } from "./models/student";
+import { Teacher } from "./models/teacher";
 
 const vadymInfo: FullPersonInfoType = {
   firstName: "Vadym",

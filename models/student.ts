@@ -1,6 +1,6 @@
-import { Course } from "./course.ts";
-import { FullPersonInfoType, Person } from "./person.ts";
-import { UniversityError } from "./university-error.ts";
+import { Course } from "./course";
+import { FullPersonInfoType, Person } from "./person";
+import { UniversityError } from "./university-error";
 
 type StatusType = "active" | "academic leave" | "graduated" | "expelled";
 
