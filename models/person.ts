@@ -2,15 +2,26 @@ export type RoleType = "student" | "teacher";
 export enum GenderEnum {
   "Male",
   "Female",
+  "Other",
 }
-export type InfoType = {
+
+type PersonInfoType = {
   firstName: string;
   lastName: string;
   birthDay: Date;
   gender: GenderEnum;
-  email: string;
-  phone: string;
 };
+type ContactInfoType = { email: string; phone: string };
+export type FullPersonInfoType = PersonInfoType & ContactInfoType;
+
+// export type FullPersonInfoType = {
+//   firstName: string;
+//   lastName: string;
+//   birthDay: Date;
+//   gender: GenderEnum;
+//   email: string;
+//   phone: string;
+// };
 
 export class Person {
   static nextId = 1;
@@ -23,7 +34,7 @@ export class Person {
   contactInfo: { email: string; phone: string };
   role: RoleType;
 
-  constructor(info: InfoType, role: RoleType) {
+  constructor(info: FullPersonInfoType, role: RoleType) {
     const { firstName, lastName, birthDay, gender, email, phone } = info;
 
     this.firstName = firstName;

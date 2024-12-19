@@ -1,10 +1,10 @@
 import { Course } from "./models/course.ts";
 import { Group } from "./models/group.ts";
-import { GenderEnum, InfoType, Person } from "./models/person.ts";
+import { GenderEnum, FullPersonInfoType, Person } from "./models/person.ts";
 import { Student } from "./models/student.ts";
 import { Teacher } from "./models/teacher.ts";
 
-const vadymInfo: InfoType = {
+const vadymInfo: FullPersonInfoType = {
   firstName: "Vadym",
   lastName: "iaroshenko",
   birthDay: new Date(2009, 9, 21),
@@ -34,7 +34,7 @@ ts_2024_12.addStudent(vadym);
 //ts_2024_12.addStudent(vadym)
 //console.log(ts_2024_12);
 
-const student2Info: InfoType = {
+const student2Info: FullPersonInfoType = {
   firstName: "Pavel",
   lastName: "Pavlov",
   birthDay: new Date(1980, 2, 26),
@@ -45,7 +45,7 @@ const student2Info: InfoType = {
 const student2 = new Student(student2Info);
 ts_2024_12.addStudent(student2);
 
-const student3Info: InfoType = {
+const student3Info: FullPersonInfoType = {
   firstName: "Ivan",
   lastName: "Ivanov",
   birthDay: new Date(1986, 5, 25),

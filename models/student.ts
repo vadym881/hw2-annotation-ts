@@ -1,5 +1,5 @@
 import { Course } from "./course.ts";
-import { InfoType, Person } from "./person.ts";
+import { FullPersonInfoType, Person } from "./person.ts";
 import { UniversityError } from "./university-error.ts";
 
 type StatusType = "active" | "academic leave" | "graduated" | "expelled";
@@ -12,7 +12,7 @@ export class Student extends Person {
   enrolledCourses: Course[] = [];
   status: StatusType;
 
-  constructor(info: InfoType) {
+  constructor(info: FullPersonInfoType) {
     super(info, "student");
     this.status = "active";
   }

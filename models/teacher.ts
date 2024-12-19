@@ -1,11 +1,11 @@
 import { Course } from "./course.ts";
-import { InfoType, Person } from "./person.ts";
+import { FullPersonInfoType, Person } from "./person.ts";
 
 export class Teacher extends Person {
   specializations = [];
   courses: Course[] = [];
 
-  constructor(info: InfoType, specializations = []) {
+  constructor(info: FullPersonInfoType, specializations = []) {
     super(info, "teacher");
     this.specializations = specializations;
   }
